@@ -57,6 +57,16 @@ h1 {
 	padding: 12px 0;
 }
 
+.text-center {
+	display: inline-block;
+	width: 100%;
+	line-height: 1.4;
+	font-size: 18px;
+	text-align: center;
+	color: rgb(73, 80, 87);
+	margin-top: 20px;
+}
+
 .subtitle {
 	display: block;
 	text-align: center;
@@ -117,7 +127,8 @@ h1 {
 .btn-call {
 	background: #5c940dff;
     color: #fff;
-    border-color: #5c940d;
+	border-color: #5c940d;
+	margin-top: 16px;
 }
 
 .btn-whatsapp {
@@ -191,9 +202,53 @@ h1 {
 .video-wrapper {
 	width: 100%;
 	height: 450px;
+	margin-bottom: 16px;
 }
 
 .video-wrapper iframe {
 	width: 100%;
 	height: 100%;
+}
+
+.slider {
+	padding: 16px 0;
+	overflow: hidden;
+}
+
+.slider .slick-dots {
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	padding-top: 12px;
+	list-style: none;
+}
+
+.slider .slick-dots li {
+	width: 10px;
+	height: 10px;
+	background-color: #53a3e0;
+	border-radius: 50%;
+	opacity: 0.3;
+	margin: 0 4px;
+	cursor: pointer;
+}
+
+.slider .slick-dots .slick-active {
+	opacity: 1;
+}
+
+.slider .slick-dots button {
+	display: none;
+}
+
+.slider-item {
+	height: 565px !important;
+	outline: none;
+}
+
+.slider-item img {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
