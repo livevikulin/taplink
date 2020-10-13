@@ -67,6 +67,13 @@ h1 {
 	margin-top: 20px;
 }
 
+.text-gray {
+	line-height: 1.4;
+	font-size: 18px;
+	color: rgb(73, 80, 87) !important;
+	margin: 12px 0;
+}
+
 .subtitle {
 	display: block;
 	text-align: center;
@@ -105,7 +112,7 @@ h1 {
 	justify-content: center;
 	width: 100%;
 	padding: 16px;
-	margin-bottom: 16px;
+	margin: 16px 0;
 	border-radius: 12px;
 	border: 1px solid #000;
 	text-decoration: none;
@@ -251,4 +258,50 @@ h1 {
 	max-width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.picture {
+	text-align: center;
+	padding: 8px 0;
+}
+
+.picture img {
+	max-width: 100%;
+}
+
+.line {
+	height: 30px;
+	position: relative;
+	margin: 12px 0;
+}
+
+.line span {
+	display: block;
+	width: 25%;
+	height: 0.1px;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 0 12px;
+	}
+	.slider-item {
+		height: 250px !important;
+		margin: 0 4px;
+	}
+	.btn {
+		text-align: center;
+	}
+	.slider {
+		width: calc(100% + 24px);
+		margin-left: -12px;
+	}
+	.video-wrapper {
+		height: 250px;
+	}
 }
